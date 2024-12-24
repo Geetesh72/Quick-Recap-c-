@@ -3,7 +3,8 @@ using namespace std;
 
 
 /*
-given array 
+given array buy once and sell once 
+
 >
 */
 int maxiProfit(vector<int>&nums){
@@ -19,7 +20,13 @@ int maxiProfit(vector<int>&nums){
 }
 int main()
 {
-    vector<int>nums  = {7,8,1,2,3,6,7,9};
+    int n;
+    cin>>n;
+   cout<<"Enter Arr elemets "<<endl;
+    vector<int>nums(n);
+    for(int i = 0;i<n;i++){
+        cin>>nums[i];
+    }
     cout<<maxiProfit(nums);
     return 0;
 }

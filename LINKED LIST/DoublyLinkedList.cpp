@@ -99,6 +99,26 @@ Node*deleteKth(Node*head, int k ){
 
 
 
+// Delete Node 
+void deleteKthNode(Node*head )
+{
+    Node*front  = head->next;
+    Node*prev  = head->back;
+    if(front == NULL){
+        prev->next = nullptr;
+        head->back = nullptr;
+        free(head);
+    }
+    prev->next = front;
+    front->back = prev;
+    head->next = head->back  = NULL;
+    delete head;
+
+
+}
+
+
+
 
 void printLL(Node*head){
     Node*temp = head;
@@ -120,8 +140,11 @@ int main()
     printLL(head);
     head = deleteTail(head);
     printLL(head);
-    head = deleteKth(head,3);
+    head = deleteKth(head,6);
     printLL(head);
+    deleteKthNode(head->next->next->next);
+    printLL(head);
+
 
     return 0;
 }
