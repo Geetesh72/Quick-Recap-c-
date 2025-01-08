@@ -1,0 +1,5 @@
+/*
+Constant Window Size
+This type involves a fixed window size as it slides over the array or string. The key idea is to maintain a window of a specific length and calculate or optimize a condition within this window
+
+*/
