@@ -7,6 +7,11 @@ public:
     int data;
     TreeNode *left, *right;
     TreeNode(int data) : data(data), left(nullptr), right(nullptr) {}
+
+    TreeNode(int data){
+        left = NULL;
+        right = NULL;
+    }
 };
 
 // Function to build a binary tree

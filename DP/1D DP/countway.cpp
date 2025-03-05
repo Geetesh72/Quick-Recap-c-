@@ -6,7 +6,7 @@ how do i understand dp problem /
 here is the some types
 
 1-> count the total no of ways
-2-> min or max
+2-> min or max 
 
 try possible  all ways
 or they ask to the best ways
@@ -26,6 +26,8 @@ same for the max
 
 // Question breakdowm
 /*
+ we are coming from n to 0 so , in recursinve and memoiozed approach 
+ 
 n is give i treat as index 0 -> n
 
 
